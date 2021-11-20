@@ -1,0 +1,2 @@
+# MSc-Advanced-Project
+This project finally applied the somatosensory device to the development of a Unity3D mini game of "Forest Ranger". Get rid of the traditional keyboard operation mode, and realize the mini game through the operation of the glove simulator, that is, bending the five finger directions can realize the up and down, left and right of the keyboard, and then realize the movement of the protagonist. Shaking the wrist or arm can realize the movement of the camera in the game, thereby changing the perspective of the character.
