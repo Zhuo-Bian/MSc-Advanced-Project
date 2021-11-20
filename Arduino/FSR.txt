@@ -1,0 +1,30 @@
+int fsrPin = A0; // yellow-left
+int pin_button2 = 2; // green-right
+
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(fsrPin, INPUT);
+  pinMode(pin_button2, INPUT);
+
+}
+
+void loop() {
+  // yellow-left button is pushed  
+  if (analogRead(fsrPin) < 500){       // from 0 to 9
+    //Serial.println("yellow-left");
+    Serial.write(1); // Unity will read this value 
+    Serial.flush();
+    delay(20); // This delay is important - 20 should be enough for a smooth transition. 
+    }
+
+  // green-right button is pushed
+  if(digitalRead(pin_button2)==LOW){
+    //Serial.println("green-right");
+    Serial.write(2); // Unity will read this value 
+    Serial.flush();
+    delay(20);
+    }
+
+}
